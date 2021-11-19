@@ -1,6 +1,22 @@
 body {
+    font-family: sans-serif;
+    line-height: 1.5;
     font-family: Roboto;
     font-size: 14px;
     background-color: teal;
     color: #fff;
+}
+:root {  --brand-color: #3f51b5;}
+
+.section {  /* Другие стили */  border: 2px solid var(--brand-color);
+}
+
+.section-title {  /* Другие стили */  color: var(--brand-color);
+}
+
+.section-title::before {  /* Другие стили */  background-color: var(--brand-color);
+}
+
+.site-nav .link {
+    text-transform: uppercase;
 }
