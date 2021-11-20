@@ -3,23 +3,47 @@ body {
     line-height: 1.5;
     font-family: Roboto;
     font-size: 14px;
-    background-color: teal;
-    color: #fff;
-}
-:root {  --brand-color: #3f51b5;}
-
-.section {  /* Другие стили */  border: 2px solid var(--brand-color);
+    color: #000000;
 }
 
-.section-title {  /* Другие стили */  color: var(--brand-color);
+/*ul {
+    list-style: none;
+}*/
+
+.header-logo {
+    font-size: 26px;
+}
+.header-logo span {
+    color: #2196F3;
+}
+.header-list {
+    font-size: 14px;
 }
 
-.section-title::before {  /* Другие стили */  background-color: var(--brand-color);
+.header-link:hover {
+    color:#2196F3
+}
+.header-link:focus {
+    color: #2196F3;
 }
 
-.site-nav .link {
-    text-transform: uppercase;
+.header-contacts {
+    font-size: 14px;
+    color: #757575;
 }
+
+.header-contacts:hover {
+    color: #2196F3;
+}
+
+.header-contacts:focus {
+    color: #2196F3;
+}
+
+.header-logo {
+    color: #000000;
+}
+
 /*основний колір #000000*/
 /*колір для WEB #2196F3*/
 /*колір для героя білий #FFFFFF*/
