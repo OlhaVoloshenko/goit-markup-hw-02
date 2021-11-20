@@ -16,30 +16,24 @@ body {
 .header-logo span {
     color: #2196F3;
 }
-.header-list {
+.header-link {
     font-size: 14px;
+    color: inherit;
 }
-
 .header-link:hover {
     color:#2196F3
 }
 .header-link:focus {
     color: #2196F3;
 }
-
-.header-contacts {
+.header-contacts .header-item {
     font-size: 14px;
     color: #757575;
 }
-
-.header-item:hover {
+.header-contacts .header-item:hover,
+.header-contacts .header-item:focus {
     color: #2196F3;
 }
-
-.header-item:focus {
-    color: #2196F3;
-}
-
 .header-logo {
     color: #000000;
 }
