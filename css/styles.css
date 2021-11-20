@@ -32,11 +32,11 @@ body {
     color: #757575;
 }
 
-.header-contacts:hover {
+.header-item:hover {
     color: #2196F3;
 }
 
-.header-contacts:focus {
+.header-item:focus {
     color: #2196F3;
 }
 
