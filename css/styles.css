@@ -4,12 +4,14 @@
     --accent-text-color: #2196F3;
     --page-text-color: #757575;
     --background-color: #FFFFFF;
+    --background-color-portfolio: #F5F4FA;
+    --background-color-main: #2F303A;
 }
 body {
-   /* font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    font-family: Roboto;
-    font-size: 14px;*/
+    font-size: 14px;
+    letter-spacing: 0.03em;
     background-color: #FFFFFF;
     color: var(--page-text-color);
 }
@@ -30,6 +32,12 @@ ul {
 .header-list .header-link:focus {
     color: var(--accent-text-color);
 }
+
+/*підсвічування активної сторінки*/
+.header-list .header-link.current {
+    color: var(--accent-text-color);
+}
+
 .header-contacts .header-item {
     color: var(--page-text-color);
 }
@@ -39,13 +47,19 @@ ul {
 }
 /*main*/
 .main-title {
+    font-size: 44px;
+    text-align: center;
     color: #FFFFFF;
+    background-color: var(--background-color-main);
+    width: 1600px;
+    height: 600px;
 }
 
 .section-title {
     color: var(--primary-text-color);
 }
-.feature-subtitle {
+.feature-subtitle .text{
+    text-transform: uppercase;
     color: var(--primary-text-color);
 }
 .section-subtitle {
@@ -60,11 +74,17 @@ ul {
 
 .button {
     color: var(--background-color);
-background-color: var(--accent-text-color);
+    background-color: var(--accent-text-color);
 }
 .button.primary {
     color: var(--background-color);
     background-color: var(--accent-text-color);
+}
+
+/*Portfolio CSS*/
+.button.main {
+    color: var(--primary-text-color);
+    background-color: var(--background-color-portfolio);
 }
 /*основний колір #000000*/
 /*колір для WEB #2196F3*/
@@ -74,3 +94,4 @@ background-color: var(--accent-text-color);
 /*колір тексту #757575*/
 /*фон для сайту #E5E5E5*/
 /*фон для блоку-героя та для футера #2F303A*/
+/*фон для кнопок в портфоліо #F5F4FA*/
