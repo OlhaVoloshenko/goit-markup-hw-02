@@ -2,6 +2,8 @@
     --primary-text-color: #212121;
     --title-text-color: #000000;
     --accent-text-color: #2196F3;
+    --page-text-color: #757575;
+    --background-color: #FFFFFF;
 }
 body {
    /* font-family: sans-serif;
@@ -9,7 +11,7 @@ body {
     font-family: Roboto;
     font-size: 14px;*/
     background-color: #FFFFFF;
-    color: #757575;
+    color: var(--page-text-color);
 }
 ul {
     list-style: none;
@@ -29,7 +31,7 @@ ul {
     color: var(--accent-text-color);
 }
 .header-contacts .header-item {
-    color: #757575;
+    color: var(--page-text-color);
 }
 .header-contacts .header-item:hover,
 .header-contacts .header-item:focus {
@@ -48,6 +50,22 @@ ul {
 }
 .section-subtitle {
     color: var(--primary-text-color);
+}
+.feature-text {
+    color: var(--page-text-color);
+}
+.section-text {
+    color: var(--page-text-color);
+}
+
+.button {
+    color: var(--background-color);
+background-color: var(--accent-text-color);
+}
+.button.primary {
+    color: var(--background-color);
+    background-color: var(--accent-text-color);
+}
 /*основний колір #000000*/
 /*колір для WEB #2196F3*/
 /*колір для героя білий #FFFFFF*/
