@@ -7,7 +7,16 @@
     --background-color-portfolio: #F5F4FA;
     --background-color-main: #2F303A;
 }
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
 body {
+    position: relative;
+    width: 1600px;
+    height: 2349px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     font-size: 14px;
@@ -15,10 +24,59 @@ body {
     background-color: #FFFFFF;
     color: var(--page-text-color);
 }
-ul {
-    list-style: none;
-}
+
+
 /*Header*/
+.header-nav {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+}
+.header-logo {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+}
+.header-list .ul {
+    position: absolute;
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+}
+
+.header-mail {
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+}
+.header-phone {
+    position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+}
+.header-contacts .header-mail {
+    color: var(--page-text-color);
+}
+.header-contacts .header-mail:hover,
+.header-contacts .header-mail:focus {
+    color: var(--accent-text-color);
+}
+.header-contacts .header-phone {
+    color: var(--page-text-color);
+}
+.header-contacts .header-phone:hover,
+.header-contacts .header-phone:focus {
+    color: var(--accent-text-color);
+}
 .header-logo {
  color: #000000;
 }
@@ -38,50 +96,121 @@ ul {
     color: var(--accent-text-color);
 }
 
-.header-contacts .header-item {
-    color: var(--page-text-color);
-}
-.header-contacts .header-item:hover,
-.header-contacts .header-item:focus {
-    color: var(--accent-text-color);
-}
 /*main*/
-.main-title {
-    font-size: 44px;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: var(--background-color-main);
+.main {
+    position: absolute;
     width: 1600px;
     height: 600px;
+    left: 0px;
+    top: 80px;
+    background-color: var(--background-color-main);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-main {
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+}
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--background-color);
 }
 
-.section-title {
-    color: var(--primary-text-color);
+/*feature*/
+
+.container-feature {
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    left: 215px;
+    top: 774px;
 }
 .feature-subtitle .text{
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
-.section-subtitle {
-    color: var(--primary-text-color);
-}
 .feature-text {
     color: var(--page-text-color);
+}
+/*directions*/
+.directions-block {
+    position: inherit;
+    width: 1170px;
+    height: 386px;
+    padding-left: 215px;
+    padding-top: 969px;
+}
+.directions-list {
+    display: inline;
+}
+
+.directions-item{
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: static;
+}
+.section-title {
+    text-align: center;
+}
+/*team*/
+
+.team-block {
+    position: inherit;
+    display: inline-block;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;
+}
+
+.team-list {
+    position: absolute;
+width: 1170px;
+height: 368px;
+left: 215px;
+top: 1635px;
+}
+
+/*footer*/
+.contacts {
+    position: absolute;
+width: 1600px;
+height: 252px;
+left: 0px;
+top: 2097px;
+background: var(--background-color-main)
 }
 .section-text {
     color: var(--page-text-color);
 }
-
+.section-title {
+    color: var(--primary-text-color);
+}
 .button {
     color: var(--background-color);
     background-color: var(--accent-text-color);
 }
-.button.primary {
+/*.button.primary {
     color: var(--background-color);
     background-color: var(--accent-text-color);
-}
+}*/
 
 /*Portfolio CSS*/
+/*body {
+position: relative;
+width: 1600px;
+height: 1880px;
+
+background: #FFFFFF;
+}*/
 .button.main {
     color: var(--primary-text-color);
     background-color: var(--background-color-portfolio);
