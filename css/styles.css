@@ -7,12 +7,25 @@
     --background-color-portfolio: #F5F4FA;
     --background-color-main: #2F303A;
 }
+/*visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }*/
+a {
+text-decoration: none;
+}
 ul {
     list-style: none;
 }
-/*li {
+li {
     display: inline-block;
-}*/
+}
 body {
     position: relative;
     /*width: 1600px;
@@ -21,11 +34,12 @@ body {
     line-height: 1.5;
     font-size: 14px;
     letter-spacing: 0.03em;
-    background-color: #FFFFFF;
+    background-color: var(--background-color);
     color: var(--page-text-color);
 }
 
 /*Header*/
+
 /*.header-nav {
     position: absolute;
     width: 1600px;
@@ -96,6 +110,11 @@ body {
 }
 
 /*main*/
+.main {
+    position: relative;
+    height: 400px;
+    background-color: var(--background-color-main);
+}
 /*.main {
     position: absolute;
     width: 1600px;
@@ -111,7 +130,7 @@ body {
     height: 120px;
     left: 452px;
     top: 280px;
-}
+}*/
 .main-title {
     font-weight: 900;
     font-size: 44px;
@@ -120,7 +139,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-color);
-}*/
+}
 
 /*feature*/
 
@@ -130,14 +149,14 @@ body {
     height: 101px;
     left: 215px;
     top: 774px;
-}
+}*/
 .feature-subtitle .text{
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 .feature-text {
     color: var(--page-text-color);
-}*/
+}
 /*directions*/
 /*.directions-block {
     position: inherit;
@@ -177,25 +196,45 @@ height: 368px;
 left: 215px;
 top: 1635px;
 }*/
-
-/*footer*/
-/*.contacts {
-    position: absolute;
-width: 1600px;
-height: 252px;
-left: 0px;
-top: 2097px;
-background: var(--background-color-main)
-}*/
-.section-text {
+.team-subtitle {
+    color: var(--primary-text-color);
+}
+.team-text {
     color: var(--page-text-color);
 }
+
 .section-title {
     color: var(--primary-text-color);
 }
 .button {
     color: var(--background-color);
     background-color: var(--accent-text-color);
+}
+/*footer*/
+.contacts {
+    position: relative;
+    width: auto; 
+    left: 0px;
+    top: auto;
+    background: var(--background-color-main)
+}
+
+.contacts-list .contacts-address {
+    color: var(--background-color);
+}
+.contacts-list .contacts-mail {
+    color: var(--background-color);
+}
+.contacts-list .contacts-mail:hover,
+.contacts-list .contacts-mail:focus {
+    color: var(--accent-text-color);
+}
+.contacts-list .contacts-phone {
+    color: var(--background-color);
+}
+.contacts-list .contacts-phone:hover,
+.contacts-list .contacts-phone:focus {
+    color: var(--accent-text-color);
 }
 /*.button.primary {
     color: var(--background-color);
@@ -213,6 +252,13 @@ background: #FFFFFF;
 .button.main {
     color: var(--primary-text-color);
     background-color: var(--background-color-portfolio);
+}
+
+.container-subtitle {
+    color: var(--primary-text-color);
+}
+.container-text {
+    color: var(--page-text-color);
 }
 /*основний колір #000000*/
 /*колір для WEB #2196F3*/
