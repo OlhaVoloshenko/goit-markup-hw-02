@@ -249,6 +249,9 @@ height: 1880px;
 
 background: #FFFFFF;
 }*/
+.button-main {
+    cursor: pointer;
+}
 .button.main {
     color: var(--primary-text-color);
     background-color: var(--background-color-portfolio);
