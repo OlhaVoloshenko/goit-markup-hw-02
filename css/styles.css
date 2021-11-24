@@ -218,7 +218,7 @@ height: 101px;
     display: block;
 }
 /*Portfolio CSS*/
-.portfolio .button-main {
+.portfolio .portfolio-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -262,3 +262,15 @@ height: 101px;
 .container-text {
     color: var(--page-text-color);
 }
+
+.portfolio-title,
+.section-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
