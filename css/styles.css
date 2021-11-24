@@ -263,8 +263,8 @@ height: 101px;
     color: var(--page-text-color);
 }
 
-.portfolio-title,
-.section-title {
+.portfolio .portfolio-title,
+.feature .section-title {
     position: absolute;
     width: 1px;
     height: 1px;
